@@ -1,39 +1,96 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for your input</p>
+    <p id="description-text">Thank you for your input</p>
     <div class="forms">
       <form id="survey-form" method="post" action="">
         <fieldset>
           <label for="name" id="name-label">
-            Name:<input id="name" name="name" type="text" placeholder="Enter your name" required>
+            Name:
           </label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          
           <label for="email" id="email-label">
-            Email:<input id="email" name="email" type="email" placeholder="Enter your email" required>
+            Email:
           </label>
-          <label for="age" id="number-label">
-            Age (optional):<input id="number" name=:"age" type="number" min="13" max="120" placeholder="Enter your age" >
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+          
+          <label for="number" id="number-label">
+            Age (optional):
           </label>
+          <input id="number" name="age" type="number" min="13" max="120" placeholder="Enter your age">
         </fieldset>
+
         <fieldset>
-          <label for="referal">
-            How did you hear about Duality?
-             <select>
+          <label for="dropdown" id="referal-label">
+            <p id="referal-text">
+                How did you hear about Duality?
+            </p>
+          </label>
+          <select id="dropdown" name="referal">
             <option value="">Select an option</option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
+            <option value="1">Instagram</option>
+            <option value="2">Facebook</option>
+            <option value="3">Tiktok</option>
+            <option value="4">Word of mouth</option>
+            <option value="5">Other</option>
           </select>
+          
+          <label for="other" id="other-label">
+            If other:
+          </label>
+          <input id="other" name="other" type="text" placeholder="Enter other">
+
+          <p id="how-likely-text">
+            How likely are you to recommend Duality to a friend?
+          </p>
+          <label for="definitely" id="definitely-label">
+            <input id="definitely" name="how-likely" type="radio" value="1" checked>Definitely
+          </label>
+          <label for="maybe" id="maybe-label">
+            <input id="maybe" name="how-likely" type="radio" value="2">Maybe
+          </label>
+          <label for="not-likely" id="not-likely-label">
+            <input id="not-likely" name="how-likely" type="radio" value="3">Not likely
           </label>
         </fieldset>
-      </form>
-    </div>
-  </body
+
+        <fieldset>
+          <p id="improvements-text">
+            What improvements would you like to see at Duality?
+          </p>
+          <label for="website" id="website-label">
+            <input id="website" name="improvements" type="checkbox" value="1">Website
+          </label>
+          <label for="tracking" id="tracking-label">
+            <input id="tracking" name="improvements" type="checkbox" value="2">Tracking
+          </label>
+          <label for="customer-service" id="customer-service-label">
+            <input id="customer-service" name="improvements" type="checkbox" value="3">Customer service
+          </label>
+          <label for="clothing-variety" id="clothing-variety-label">
+            <input id="clothing-variety" name="improvements" type="checkbox" value="4">Clothing variety
+          </label>
+          <label for="clothing-quality" id="clothing-quality-label">
+            <label for="clothing-quality">
+                <input id="clothing-quality" name="improvements" type="checkbox" value="5">Clothing quality
+              </label>
+              <p>Further feedback:</p>
+              <label for="feedback" id="further-feedback-label">
+                <textarea id="feedback" name="feedback" rows="5" cols="30" placeholder="Enter feedback"></textarea>
+              </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+          </form>
+        </div>
+      </body>
+    </html>
+    
+           
