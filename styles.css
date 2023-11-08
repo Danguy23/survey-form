@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Prompt:wght@300;700&display=swap");
+
+:root {
+
+    /* Colors */
+    --background-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 100%);
+    --text-box-color: hsl(0, 0%, 20%);
+
+    /* Font */
+    --body-font: "Prompt", sans-serif;
+    --font-regular: 300;
+    --font-bold: 700;
+    --h1-font-size: 2.5rem;
+    --p-font-size: 1.25rem;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    
+}
+
+p {
+    font-size: var(--p-font-size);
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding: 0rem 0;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 20px 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline; 
+}
+
+#title {
+    font-size: var(--h1-font-size);
+}
+
+#title, 
+#description-text {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+input[type="submit"] {
+    display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  background-color:var(--background-color);
+  border-color: var(--text-color);
+  min-width: 300px;
+}
+
+.scrollable {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: thin;     /* Firefox */
+  }
+  
+  .scrollable::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
