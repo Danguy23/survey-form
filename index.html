@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for your input</p>
+    <div class="forms">
+      <form id="survey-form" method="post" action="">
+        <fieldset>
+          <label for="name" id="name-label">
+            Name:<input id="name" name="name" type="text" placeholder="Enter your name" required>
+          </label>
+          <label for="email" id="email-label">
+            Email:<input id="email" name="email" type="email" placeholder="Enter your email" required>
+          </label>
+          <label for="age" id="number-label">
+            Age (optional):<input id="number" name=:"age" type="number" min="13" max="120" placeholder="Enter your age" >
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="referal">
+            How did you hear about Duality?
+             <select>
+            <option value="">Select an option</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+          </select>
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </body
